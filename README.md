@@ -1,4 +1,3 @@
-# Mawari-Guardian-Node-Manager-Multi-Container-Auto-Update-Rename-by-Jackxyz72
 # Mawari Guardian Node Manager
 
 Script Bash interaktif untuk mengelola **Mawari Guardian Node** di Linux.  
@@ -22,6 +21,4 @@ Mendukung multi-container, auto update, dan rename container dengan menu yang mu
 Clone repository ini ke Linux server kamu:
 
 ```bash
-git clone https://github.com/username/mawari-node-manager.git
-cd mawari-node-manager
-chmod +x mawari.sh
+https://github.com/Jackxyz72/Mawari-Guardian-Node-Manager-Multi-Container-Auto-Update-Rename-by-Jackxyz-.git
