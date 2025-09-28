@@ -1,31 +1,3 @@
-
-# === Buat folder project ===
-mkdir -p ~/mawari-node-manager
-cd ~/mawari-node-manager
-
-# === Buat script utama (mawari.sh) ===
-nano mawari.sh
-# (#!/bin/bash
-
-# Mawari Guardian Node Manager (Multi-Container + Auto Update + Rename)
-# by Jackxyz72 :)
-
-# Variabel default
-IMAGE="us-east4-docker.pkg.dev/mawarinetwork-dev/mwr-net-d-car-uses4-public-docker-registry-e62e/mawari-node:latest"
-CACHE_DIR="$HOME/mawari"
-
-# Fungsi: instal Docker
-install_docker() {
-    echo "🔧 Menginstal Docker..."
-    sudo apt update && sudo apt upgrade -y
-    sudo apt install -y docker.io
-    sudo systemctl enable docker
-    sudo systemctl start docker
-    echo "✅ Docker terinstal."
-}
-
-# Fungsi: jalankan node baru
-start_node() {
     read -p "Masukkan nama container: " NODE_NAME
     read -p "Masukkan alamat wallet (0x...): " OWNER_ADDRESS
     mkdir -p $CACHE_DIR/$NODE_NAME
